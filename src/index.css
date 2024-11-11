@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  background-color: rgb(31, 41, 55);
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scrollbar-gutter: stable;
+  scrollbar-width: thin; /* "auto" or "thin" */
+  scrollbar-color: rgb(17, 24, 39) rgb(55, 65, 81);
+}
+
+html::-webkit-scrollbar {
+  width: 12px;
+}
+
+html::-webkit-scrollbar-track {
+  background-color: rgb(55, 65, 81);
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: rgb(17, 24, 39);
+  border-radius: 6px;
+  border: 2px solid rgb(55, 65, 81);
+}
+
+html.no-scroll {
+  overflow-y: hidden;
+}
